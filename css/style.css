@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #426787;
+}
+.logo{
+    width: 20%;
+}
+.userFlows, .mostrarClicados{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+}
+h1, h2{
+ text-align: center;
+ color: #1D2834;
+}
+.userFlowImg, .jerarquiaInfo, .siteMap{
+    width: 30%;
+   
+}
+
+.mostrarClicados,img{
+    width: 70%;
+    margin: 2%;
+   
+}
+
