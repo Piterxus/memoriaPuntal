@@ -1,21 +1,27 @@
 window.onload = () =>{
-   const userFlows = document.querySelector(".userFlows");
-   let mostrarClicados = document.querySelector("#mostrarClicados");
-   const imgs = document.querySelectorAll("img");
-   console.log(imgs)
-   imgs.forEach((img) => {
-     img.addEventListener("click", () => {
-       userFlows.style.display = "none";
-      console.log(img)
-      //  mostrarClicados.style.display = "block";
-       mostrarClicados.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
-       const botonVolver = document.createElement("button");
-         botonVolver.innerHTML = "Volver";
-         mostrarClicados.appendChild(botonVolver);
-         botonVolver.addEventListener("click", () => {
-            location.reload();
-         });
-    
-     });
-   });
+  const roleLinks = document.querySelector(".roleLink");
+  const flowLink = document.getElementById("flowLink");
+  const users = document.getElementById("users");
+  const flows = document.getElementById("flows");
+  const links = document.querySelectorAll("a");
+  const imgMostrar = document.getElementById("imgMostrar");    
+
+  flows.addEventListener("mouseover", () => {
+    users.style.display = "block";
+  
+  });
+  flows.addEventListener("mouseout", () => {
+    users.style.display = "none";
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+    imgMostrar.src = link.dataset.src;
+    if (link.dataset.src == "./img/DIAGRAMA INFORMACION.svg") {
+      imgMostrar.style.width = "50%";
+    }
+    console.log(link.dataset.src)
+    });
+  });
+
 }
