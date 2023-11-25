@@ -1,6 +1,5 @@
 window.onload = () =>{
-  const roleLinks = document.querySelector(".roleLink");
-  const flowLink = document.getElementById("flowLink");
+
   const users = document.getElementById("users");
   const flows = document.getElementById("flows");
   const links = document.querySelectorAll("a");
