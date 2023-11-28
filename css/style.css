@@ -27,7 +27,7 @@ a:hover {
     color: #426787;
 }
 
-.roleLinks {
+.roleLinks, .wireframesLfClass {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
