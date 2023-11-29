@@ -2,19 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #426787;
+ 
 }
 
 nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #1D2834;
     padding: 1% 5%;
+    height: 100%;
+        /* Ocupa toda la altura del body */
+  
 }
 
 a {
@@ -27,7 +33,7 @@ a:hover {
     color: #426787;
 }
 
-.roleLinks, .wireframesLfClass {
+/* .roleLinks, .wireframesLfClass {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -35,13 +41,15 @@ a:hover {
     width: 20%;
 
 
-}
+} */
 
 .flowLinks {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: space-around;
     align-items: center;
-    width: 150%;
+    width: 150%; */
     margin-top: 15px;
     display: none;
 
@@ -50,10 +58,12 @@ a:hover {
 .flowLinks a {
     margin: 0 2%;
     font-size: small;
+ 
 }
 
 .logo {
-    width: 10%;
+    width: 40%;
+    margin-bottom: 20px;
 
 }
 
