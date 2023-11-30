@@ -16,7 +16,7 @@ nav {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    align-items: center; 
+    align-items: flex-start; 
     background-color: #1D2834;
     padding: 1% 5%;
     height: 100vh;
