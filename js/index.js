@@ -51,6 +51,10 @@ window.onload = () =>{
     if (link.dataset.src == "./img/DIAGRAMA INFORMACION.svg") {
       imgMostrar.style.width = "50%";
     }
+      else if (link.dataset.src == "./img/SITE MAP PUNTAL.svg") {
+        imgMostrar.style.width = "70%";
+        imgMostrar.style.height = "auto";
+      }
     console.log(link.dataset.src)
     });
   });

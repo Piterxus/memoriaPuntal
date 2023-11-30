@@ -19,6 +19,7 @@ nav {
     background-color: #1D2834;
     padding: 1% 5%;
     height: 100%;
+    
         /* Ocupa toda la altura del body */
   
 }
@@ -73,6 +74,10 @@ a:hover {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 5%;
+    overflow: scroll;
+    white-space: nowrap;
+    height: 700px;
+    border-radius: 5px;
 
 }
 
