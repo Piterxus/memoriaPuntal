@@ -7,7 +7,8 @@ window.onload = () =>{
   const wlfShow = document.getElementById("wlfShow");
   const links = document.querySelectorAll("a");
   const imgMostrar = document.getElementById("imgMostrar");
-  const flowLink = document.getElementById("flowLink");    
+  const flowLink = document.getElementById("flowLink");  
+  const piePagina = document.getElementById("piePagina");  
 
   // flows.addEventListener("mouseover", () => {
   //   users.style.display = "block";
@@ -49,11 +50,18 @@ window.onload = () =>{
     link.addEventListener("click", () => {
     imgMostrar.src = link.dataset.src;
     if (link.dataset.src == "./img/DIAGRAMA INFORMACION.svg") {
-      imgMostrar.style.width = "50%";
+ 
+
+      imgMostrar.style.width = "70%";
+      piePagina.innerText = "Haga scroll en la imagen para verla completa";
     }
       else if (link.dataset.src == "./img/SITE MAP PUNTAL.svg") {
         imgMostrar.style.width = "70%";
         imgMostrar.style.height = "auto";
+         piePagina.innerText = "Haga scroll en la imagen para verla completa";
+      }
+      else{
+        piePagina.innerText = "";
       }
     console.log(link.dataset.src)
     });
